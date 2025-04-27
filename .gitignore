@@ -77,9 +77,4 @@ coverage.xml
 /temp/
 
 # Exclude storage folders
-input-storage/
 output-storage/
-
-# Do NOT exclude these, we want to commit them
-!inputs/
-!outputs/ 
