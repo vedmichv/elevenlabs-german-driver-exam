@@ -2,12 +2,10 @@ germanphrase,russiantranslation
 links,налево
 rechts,направо
 geradeaus,прямо
-die nächste Ampel rechts/links),на следующем светофоре направо
+die nächste Ampel rechts,на следующем светофоре направо
 die nächste Ampel links,на следующем светофоре налево
-die nächste Straße links),следующую улицу налево
-die nächste Straße rechts,следующую улицу направо
+die nächste Straße links,следующую улицу налево
 bei der nächsten Möglichkeit links,при следующей возможности налево
-bei der nächsten Möglichkeit rechts,при следующей возможности направо
 an der Kreuzung,на перекрёстке
 an der zweiten Kreuzung,на втором перекрёстке
 Fahrstreifenwechsel,смена полосы
@@ -20,14 +18,14 @@ parken vorwärts,парковка передом
 parken rückwärts, задом
 die Gefahrenbremsung,экстренное торможение
 an der nächsten Ausfahrt Autobahn verlassen,съехать с автобана на следующем выезде
-eine Möglichkeit zum Wenden / Umkehren,место для разворота
+eine Möglichkeit zum Wenden,место для разворота
 der Parkplatz,парковка
 Busparkplatz, парковка для автобуса
 der Kreisverkehr,круговое движение
 der abknickenden Vorfahrtsstraße folgen,"следовать по главной, которая поворачивает"
-die Schnellstraße,скоростная дорога
 bitte stehen bleiben,остановитесь
-wenden / umkehren,развернуться
+wenden ,развернуться
+umkehren ,развернуться
 einbiegen,повернуть (въехать)
 Einfahrt,въезд
 Ausfahrt,выезд
@@ -42,19 +40,13 @@ An der Kreuzung geradeaus fahren.,На перекрёстке езжайте п�
 Bleiben Sie auf dieser Straße.,Оставайтесь на этой улице.
 An der nächsten Ampel bitte rechts abbiegen.,На следующем светофоре — направо.
 An der nächsten Ampel links abbiegen.,На следующем светофоре — налево.
-Fahren Sie bis zur nächsten Ampel und dann rechts.,Доезжайте до светофора и направо.
 Die nächste Straße bitte links.,Поверните налево на следующей улице.
 Die nächste Straße rechts nehmen.,Следующую улицу — направо.
-Jetzt gleich rechts in die kleine Straße.,Сейчас направо на маленькую улицу.
 Bei der nächsten Möglichkeit bitte rechts.,При следующей возможности — направо.
 Fahren Sie bei nächster Gelegenheit links.,Поверните налево при следующем удобном моменте.
 Wenn möglich rechts abbiegen.,Если возможно — направо.
 An der Kreuzung bitte links.,На перекрёстке — налево.
 An der zweiten Kreuzung rechts abbiegen.,На втором перекрёстке — направо.
-Geradeaus bis zur zweiten Kreuzung und dann links.,"Прямо до второго перекрёстка, потом налево."
-Wechseln Sie bitte auf die linke Spur.,Перестройтесь на левую полосу.
-Fahren Sie auf die rechte Spur.,Перестройтесь направо.
-Spur wechseln bitte.,Смените полосу.
 Wir fahren Richtung Zentrum.,Мы едем в сторону центра.
 Jetzt Richtung Stuttgart.,Сейчас в сторону Штутгарта.
 Bleiben Sie in Richtung Autobahn.,Оставайтесь в направлении автобана.
