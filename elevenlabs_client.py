@@ -17,12 +17,14 @@ STABILITY = 0.9
 SIMILARITY_BOOST = 0.85
 
 
-def generate_audio(ssml_text, output_path, phrase, retries=3):
+def generate_audio(ssml_text, output_path, phrase, retries=3, voice_id=None):
     if not ELEVENLABS_API_KEY:
         raise ValueError('ELEVENLABS_API_KEY not set in environment!')
-    if not VOICE_ID or VOICE_ID == 'YOUR_TEACHER_VOICE_ID':
-        raise ValueError('ELEVENLABS_VOICE_ID not set in environment or is using the default placeholder!')
-    url = ELEVENLABS_API_URL.format(voice_id=VOICE_ID)
+    # Use the provided voice_id or fallback to the default
+    selected_voice_id = voice_id or VOICE_ID
+    if not selected_voice_id or selected_voice_id == 'YOUR_TEACHER_VOICE_ID':
+        raise ValueError('Voice ID not set in environment or is using the default placeholder!')
+    url = ELEVENLABS_API_URL.format(voice_id=selected_voice_id)
     headers = {
         'xi-api-key': ELEVENLABS_API_KEY,
         'Content-Type': 'application/json',

@@ -78,3 +78,5 @@ coverage.xml
 
 # Exclude storage folders
 output-storage/
+.DS_Store
+.env

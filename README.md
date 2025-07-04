@@ -11,12 +11,6 @@ This project will generate audio files where:
 - German phrase is spoken.
 - 2 seconds pause.
 - German phrase is spoken.
-- 1 second pause.
-- Russian translation is spoken.
-- 2 seconds pause.
-- German phrase is spoken.
-- 2 seconds pause.
-- German phrase is spoken.
 
 We will use **ElevenLabs API** to synthesize the audio.  
 Input: German phrases + Russian translations (from `.md` or `.csv` file).  
@@ -114,19 +108,39 @@ pydub (optional, for custom pauses)
 
 ## 🚀 How to Run the App
 
-1. **Install dependencies:**
+1. **Install dependencies (Python 3.12 required):**
    ```sh
-   pip install -r requirements.txt
+   uv pip install -r requirements.txt
    ```
+   > **Note:** You must use Python 3.12 (not 3.13+) for compatibility with pydub. If you need to create a new environment:
+   > ```sh
+   > uv venv --python=3.12 venv
+   > source venv/bin/activate
+   > uv pip install -r requirements.txt
+   > ```
+   > Also, make sure you have `ffmpeg` installed on your system (required by pydub).
 
 2. **Set up your `.env` file:**
-   - Make sure you have your `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` set in the `.env` file.
+   - Make sure you have your `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID_GERMAN`, and `ELEVENLABS_VOICE_ID_RUSSIAN` set in the `.env` file.
 
 3. **Run the app:**
    ```sh
    python main.py
    ```
    The generated audio files will appear in the `outputs/` directory.
+
+---
+
+## 🔊 Audio Generation Sequence
+
+For each phrase, the generated audio will follow this sequence:
+- German phrase (German voice)
+- 1 second pause
+- Russian translation (Russian voice)
+- 2 seconds pause
+- German phrase (German voice)
+- 2 seconds pause
+- German phrase (German voice)
 
 ---
 
